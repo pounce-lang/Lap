@@ -1,2 +1,2 @@
-# Lap
-A Little application of Poune that tries to follow along with the book "The Little Typer"
+# lap
+A Little Application of Pounce that tries to follow along with "The Little Typer" book, adding typing (simple types first) to Pounce.
