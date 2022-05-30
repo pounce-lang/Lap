@@ -4,10 +4,12 @@ import { interpreter , unParse} from '@pounce-lang/core';
 import './App.css';
 import nextId from './nextId';
 
-const PounceCat = (props) => {
+type PounceCatPropsType = { pounceCode: string; preCode: string; }; // | number | readonly string[] | undefined
+
+const PounceCat = (props: PounceCatPropsType) => {
   const [src, setSrc] = useState(props.pounceCode);
   const [dlId] = useState(nextId("pounceCatDatalist"));
-  const cat = interpreter(src);
+  const cat = interpreter(`${props.preCode ?? ''} ${src}`);
   const result = runPounce(cat);
   return (
     <div>
@@ -23,7 +25,7 @@ const PounceCat = (props) => {
   );
 };
 
-const lineCount = (s) => {
+const lineCount = (s: string) => {
   return s.split("\n").length;
 };
 
