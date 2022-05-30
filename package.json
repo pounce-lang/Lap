@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@pounce-lang/core": "^2.4.2",
+    "@pounce-lang/core": "^2.4.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },

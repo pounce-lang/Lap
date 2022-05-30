@@ -17,9 +17,13 @@ export const Chat = () => {
           <ol>
             <li>____ is a ____.
               <PounceCat pounceCode={`
+0 Nat is-a
 5 Nat is-a
 '5' Str is-a
 Nat Type is-a
+5 Neg is-a !
+0 Str is-a !
+Type Type is-a !
 
 [[type-of] dip ==] 
 [is-a] compose`} ></PounceCat>
@@ -38,12 +42,14 @@ Nat Type Nat is-the-same-type-as
             <li>____ is a type.
               <PounceCat pounceCode={`
 Nat is-a-type
-5 is-a-type
-'a' is-a-type
-Type is-a-type
+Str is-a-type
+5 is-a-type !
+0 is-a-type !
+'a' is-a-type !
+Type is-a-type !
 
 
-[type-of dup [Type ==] dip ] 
+[type-of Type == ] 
 [is-a-type] compose
 `} ></PounceCat>
             </li>
