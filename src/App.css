@@ -27,3 +27,12 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+div.Feature-child {
+  margin: 5px;
+  padding: 5px;
+}
+
+textarea {
+  width: 96%;
+}
